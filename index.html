@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-    <title>My First Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> my first form</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+        h2 { text-align: center; color: #333; }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        button {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #218838; }
+    </style>
 </head>
 <body>
-    <h1>Hello World! I am learning to code for a bright future.</h1>
-    <p>Follow my journey as I build high-value skills in my BCA.</p>
+
+    <div class="form-container">
+        <h2>Contact Me</h2>
+        <form>
+            <label>your name</label>
+            <input type="text" placeholder="write your namr" required>
+            
+            <label>ईमेल:</label>
+            <input type="email" placeholder="example@mail.com" required>
+            
+            <label>संदेश:</label>
+            <textarea rows="4" placeholder="write your messege"></textarea>
+            
+            <button type="submit">send (Submit)</button>
+        </form>
+    </div>
+
 </body>
 </html>
